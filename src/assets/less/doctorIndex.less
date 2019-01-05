@@ -1,0 +1,207 @@
+.page-container {
+    &.page-doctorIndex {
+        font-size: 14px;
+        position: relative;
+        .evaluate-nodata {
+            width: 110px;
+            height: 100px;
+        }
+        .nodata-text {
+            color: #6c7d8f;
+        }
+        .webkitbox {
+            display: -webkit-box;
+        }
+        .pagetop-bg {
+            width: 100%;
+            height: 86px;
+            position: absolute;
+            top: -19px;
+            left: 0;
+            background: -webkit-linear-gradient(left, #56B5F8 , #366FF0); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, #56B5F8 , #366FF0); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, #56B5F8, #366FF0); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, #56B5F8 , #366FF0); /* 标准的语法 */
+            z-index: 0;
+        }
+        .doctor-info-card {
+            margin: 19px 14px 12px 14px;
+            padding: 14px;
+            box-shadow: 0 2px 6px 0 rgba(0,0,0,0.04);
+            border-radius: 4px;
+            position: relative;
+            z-index: 100;
+            .mrgtop0 {
+                margin-top: 0 !important;
+            }
+            .card-top {
+                .doctor-img {
+                   height: 100%;
+                }
+                .img-container {
+                    width: 100%;
+                    height: 112px;
+                    line-height: 112px;
+                    text-align: center;
+                    margin-top: -25px;
+                    overflow: hidden;
+                    // border: 1px solid #e2e2e2;
+                }
+                .doctor-tag {
+                    font-size: 11px;
+                    color: #fff;
+                    height: 19px;
+                    line-height: 19px;
+                    box-sizing: border-box;
+                    padding: 0 10px;
+                    display: inline-block;
+                    .tag-bg {
+                        width: 100%;
+                        height: 100%;
+                        display: inline-block;
+                        border-radius: 2px;
+                        transform:skewX(-25deg);
+                        top: 0;
+                        left: 0;
+                        z-index: -100;
+                        &.rate-tag {
+                            background: -webkit-linear-gradient(left, #ffac1f , #ff8c07); /* Safari 5.1 - 6.0 */
+                            background: -o-linear-gradient(right, #ffac1f , #ff8c07); /* Opera 11.1 - 12.0 */
+                            background: -moz-linear-gradient(right, #ffac1f, #ff8c07); /* Firefox 3.6 - 15 */
+                            background: linear-gradient(to right, #ffac1f , #ff8c07); /* 标准的语法 */
+                        }
+                        &.arrange-tag {
+                            background: -webkit-linear-gradient(left, #ffca00 , #ffa300); /* Safari 5.1 - 6.0 */
+                            background: -o-linear-gradient(right, #ffca00 , #ffa300); /* Opera 11.1 - 12.0 */
+                            background: -moz-linear-gradient(right, #ffca00 , #ffa300); /* Firefox 3.6 - 15 */
+                            background: linear-gradient(to right, #ffca00 , #ffa300); /* 标准的语法 */
+                        }
+                    }
+                    &+.doctor-tag {
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .line-divider {
+                width: 100%;
+                height: 1px;
+                border-bottom: 1px solid rgba(226,226,226,0.6);
+                margin: 12px 0;
+            }
+            .card-bottom {
+                .showAll {
+                    color: #4185f3;
+                    // display: block;
+                    text-align: right;
+                    display:inline-block;
+                    float: right;
+                    // margin-top: 5px;
+                    .collp-icon {
+                        fill: #4185f3;
+                        position: relative;
+                        top: 3px;
+                        margin-left: 2px;
+                    }
+                }
+                .doctor-goodat {
+                    width: 18px;
+                    height: 18px;
+                    display: inline-block;
+                    background: url('../../assets/img/doctor_goodat.png') center no-repeat;
+                    background-size: contain;
+                    position: relative;
+                    top: 3px;
+                    margin-right: 9px;
+                }
+            }
+        }
+        .paddingbottom-12 {
+            padding-bottom: 16px;
+        }
+        .panel-card {
+            background-color: #fff;
+            &+.panel-card {
+                margin-top: 12px;
+            }
+           .panel-title {
+                font-size: 15px;
+                color: #333;
+                line-height: 22px;
+                padding: 11px 14px;
+           } 
+           .rate-detail-container {
+            //    border-top: 1px solid #e2e2e2;
+               border-bottom: 1px solid #e2e2e2;
+               padding: 0 14px;
+               &.paddingbottom20 {
+                   padding-bottom: 20px;
+               }
+                .rate-tag {
+                    color: #ffa414;
+                    height: 20px;
+                    line-height: 20px;
+                    padding: 0 6px;
+                    display: inline-block;
+                    background-color: #fef8ee;
+                    border-radius: 1px;
+                    &+.rate-tag {
+                        margin-left: 8px;
+                    }
+                }
+           }
+           .tb-dutyrost {
+               border: none;
+                thead {
+                    font-weight: 400;
+                    height: 34px;
+                    tr {
+                        th {
+                            font-size: 12px;
+                            // border: 1px solid #e2e2e2;
+                            border-bottom: none;
+                            &:first-child {
+                                border-left: none;
+                            }
+                            &:last-child {
+                                border-right: none;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            height: 55px;
+                            line-height: 17px;
+                            // border: 1px solid #e2e2e2;
+                            &:first-child {
+                                font-size: 12px;
+                                padding: 0 2px;
+                                border-left: none;
+                            }
+                            &:last-child {
+                                border-right: none;
+                            }
+                            &.register {
+                                color: #fff;
+                                background-color: #5e98f5;
+                            }
+                            &.full {
+                                color: #fff;
+                                background-color: rgba(94,152,245,0.3);
+                            }
+                            &.stop {
+                                color: #fff;
+                                background-color: rgba(153,153,153,0.3);
+                            }
+                        }
+                    }
+                }
+           }
+        }
+        .have-no-more {
+            height: 52px;
+            line-height: 52px;
+        }
+    }
+}

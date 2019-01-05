@@ -1,0 +1,95 @@
+.page-container {
+    &.page-waitingroom {
+        .marginLeft6 {
+            margin-left: 6px;
+        }
+        .theme_default_999 {
+            color: #999;
+            border: 1px solid #cdcdcd;
+        }
+
+        .notice-container {
+            color: #ff7b35;
+            padding: 11px 14px;
+            background-color: #fff0e6;
+            .notice-icon {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                background: url('../../assets/img/waitingroom_notice.png') center no-repeat;
+                background-size: contain;
+                position: relative;
+                top: 4px;
+            }
+        }
+        .waiting-list {
+            .waiting-item {
+                padding: 0 14px;
+                background-color: #fff;
+                &+.waiting-item {
+                    margin-top: 8px;
+                }
+            }
+        }
+        .video {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            background: url('../../assets/img/waitingroom_video.png') center no-repeat;
+            background-size: contain;
+            position: relative;
+            top: 3px;
+            margin-right: 8px;
+            &.video-disabled {
+                background: url('../../assets/img/waitingroom_video_disabled.png') center no-repeat;
+                background-size: contain;
+            }
+        }
+        .waiting-info-flexbox {
+            padding: 14px 0;
+        }
+        .bottom-tool {
+            height: 37px;
+            line-height: 37px;
+            position: relative;
+            // border-top: 1px dashed #e2e2e2;
+            &:before {
+                content: " ";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 1px;
+                border-bottom: 1px dashed #e2e2e2;
+                color: #e2e2e2;
+                transform-origin: 0 100%;
+                transform: scaleY(0.5);
+            }
+        }
+        .have-no-queue {
+            padding-top: 25%;
+            text-align: center;
+            .waitingqueue-nodata {
+                width: 42%;
+            }
+            .nodata-text {
+                font-size: 17px;
+                color: #6c7d8f;
+                margin-top: 28px;
+            }
+            .link {
+                color: #4185f3;
+                margin-top: 5px;
+                .linkto-icon {
+                    width: 12px;
+                    height: 12px;
+                    display: inline-block;
+                    background: url('../../assets/img/waitingroom-link.png') center no-repeat;
+                    background-size: contain;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
